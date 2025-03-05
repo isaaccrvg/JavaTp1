@@ -1,17 +1,15 @@
-import java.util.Scanner;
-
 public class HelloWorld{
     public static void main (String[] args){
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Me fale o seu nome, por favor? ");
-        String nome = scanner.nextLine();
+        String nome = "isaac";
+        String cidade = "Rio de Janeiro";
+        int idade = 22;
+        double salario = 10000.00;
 
-        System.out.print("Informe sua idade: ");
-        int idade = scanner.nextInt();
 
-        System.out.println("Nome: " + nome + ", Idade: " + idade + " Anos.");
-
-        scanner.close();
+        System.out.println("Oi, me chamo: " + nome + ", sou estudante de Engenharia de software!");
+        System.out.println("Nascido em: " + cidade);
+        System.out.println("idade: " + idade);
+        System.out.println("Meu salário é de: R$" + salario);
     }
 }
